@@ -48,7 +48,21 @@ pip install torch torchvision
 
 ## Additional Notes
 
-While the report emphasized the use of a single channel, additional experiments revealed that using a double channel improves model performance. This repository contains the double channel scripts that helped overcome the matching dilemma mentioned in the report, resulting in better performance on the validation set.
+### Single Channel Drawbacks
+
+The initial approach in the project was focused on a single channel network. However, this method encountered significant challenges:
+
+- **Indistinguishable Rewards**: The model struggled to differentiate between matching rewards and pricing rewards, leading to suboptimal decision-making.
+- **Matching Dilemma**: The single-channel network was unable to effectively address the matching dilemma described in the report, where balancing supply and demand while optimizing pricing posed a significant challenge.
+
+### Transition to Double Channel
+
+After recognizing these issues, the model was modified to utilize a double-channel approach. This adjustment involved:
+
+- **Separate Channels for Rewards**: By separating the reward mechanisms into two distinct channels, the model could more effectively learn and distinguish between the different types of rewards.
+- **Improved Model Performance**: The double-channel structure, combined with refined reward mechanisms, enabled the model to overcome the previous matching dilemma. The final model demonstrated strong performance on the validation set, showing a marked improvement in both pricing and matching decisions.
+
+This modification highlights the importance of flexibility and adaptation in model design, and the effectiveness of multiple channels in complex decision-making environments.
 
 ## Usage
 
