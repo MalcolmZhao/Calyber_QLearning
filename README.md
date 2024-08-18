@@ -37,14 +37,9 @@ This repository contains the implementation of a decision-making model based on 
 ## Dependencies
 
 This project requires the following dependency:
-
+- Python 3.7 or higher
 - **PyTorch**: For building and training the neural network models.
-
-You can install PyTorch using pip:
-
-```bash
-pip install torch torchvision
-```
+- Other dependencies as listed in individual scripts
 
 ## Additional Notes
 
