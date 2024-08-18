@@ -1,4 +1,4 @@
-# Calyber Decision-making Repository
+# Calyber Q-Learning Decision-making
 
 This repository contains the implementation of a decision-making model based on reinforcement learning, designed to address the challenges in pricing and matching in a double-channel environment. The model and associated scripts are used to simulate, train, and evaluate a neural network-based decision system.
 
